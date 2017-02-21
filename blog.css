@@ -3,116 +3,71 @@
 html,body,header,main,footer,section,aside,h1,h2,h3,h4,p{margin:0;padding:0;}
 ul{margin:0;}
 
-
 body {
+  /* DO NOT CHANGE THESE */
+  font-family: Verdana, Arial, sans-serif;
+  }
 
-    /* DO NOT CHANGE THESE */
-    font-family: Verdana, Arial, sans-serif;
-}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1
+  /*flex-grow: 1;*/
+  }
 
+.container {
+  /*everything*/
+  display: flex;
+  }
 
 .hero {
+  /* DO NOT CHANGE THESE */
+  background-color: #444444;
+  }
 
-    /* DO NOT CHANGE THESE */
-    background-color: #444444;
-}
 .hero h1 {
-
-    /* DO NOT CHANGE THESE */
-    color: #ffffff;
-}
+   /* DO NOT CHANGE THESE */
+   color: #ffffff;
+   }
 
 
 .posts {
+   flex-wrap: wrap;
+   /* DO NOT CHANGE THESE */
+   color: #444444
+   /*margin:*/
 
-    /* DO NOT CHANGE THESE */
-    color: #444444;
-}
+   }
+
 .posts article {
-
-    /* DO NOT CHANGE THESE */
-    background-color: #dddddd;
-    border: 1px solid #444444;
-    height: 20em; /* this is just so we can see the articles since they have no content */
-}
-
+   /* DO NOT CHANGE THESE */
+   background-color: #dddddd;
+   border: 1px solid #444444;
+   height: 20em; /* this is just so we can see the articles since they have no content */
+   justify-content:space-between;
+   display: flex;
+   margin: 1em;
+   width: 30%;
+   }
 
 .sidebar {
-
-    /* DO NOT CHANGE THESE */
-    background-color: #aaaaaa;
-    color: #444444;
-}
+   /* DO NOT CHANGE THESE */
+   background-color: #aaaaaa;
+   color: #444444;
+   margin: 1em;
+   /*margin:*/
+   }
 
 .sidebar section {
-
-
     /* DO NOT CHANGE THESE */
     background-color: #dddddd;
     border: 1px solid #444444;
     height: 10em; /* this is just so we can see the articles since they have no content */
-}
+    }
 
 
 footer {
-
     /* DO NOT CHANGE THESE */
     background-color: #444444;
     color: #eeeeee;
-}
-Raw
- flexy-blog.html
-<!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <meta charset='utf-8'>
-        <title>Flexy Blog</title>
-        <link rel='stylesheet' type='text/css' href='blog.css'>
-    </head>
-    <body>
-
-        <header class='hero'>
-            <h1>Flexy Blog</h1>
-            <nav>
-                <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Search</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class='container'>
-
-            <main class='posts'>
-                <article>Article 1</article>
-                <article>Article 2</article>
-                <article>Article 3</article>
-                <article>Article 4</article>
-                <article>Article 5</article>
-                <article>Article 6</article>
-            </main>
-
-            <aside class='sidebar'>
-                <section>Sidebar Item 1</section>
-                <section>Sidebar Item 2</section>
-                <section>Sidebar Item 3</section>
-            </aside>
-
-        </section>
-
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Search</a></li>
-                    <li><a href='http://theironyard.com'>The Iron Yard</a></li>
-                </ul>
-            </nav>
-
-            <p>The Blog is not real, as much as we all want it to be.</p>
-        </footer>
-
-    </body>
-</html>
+    }
