@@ -56,7 +56,6 @@ body {
    justify-content: space-around;
    display: flex;
    box-sizing: border-box;
-
    }
 
 .posts article {
@@ -76,7 +75,7 @@ body {
   flex-direction: column;
   flex: 0 0 15%;
    /*margin:*/
-   }
+  }
 
 .sidebar section {
   /* DO NOT CHANGE THESE */
@@ -94,6 +93,6 @@ footer, footer a{
    width: 90%;
    }
 
-p {
+footer p {
   text-align: right;
   }
