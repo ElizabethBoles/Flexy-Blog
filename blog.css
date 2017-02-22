@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: flex-end;
   height: 10em;
-  /*width*/
+
   }
 
 .hero h1 {
@@ -46,7 +46,8 @@ body {
   text-decoration: none;
   color: #ffffff;
   margin: 1em 1em 1em 1em;
-}
+  }
+
 .posts {
    flex-wrap: wrap;
    /* DO NOT CHANGE THESE */
@@ -54,6 +55,8 @@ body {
    /*margin:*/
    justify-content: space-around;
    display: flex;
+   box-sizing: border-box;
+
    }
 
 .posts article {
@@ -63,7 +66,7 @@ body {
    height: 20em; /* this is just so we can see the articles since they have no content */
    margin: 1em;
    flex: 0 0 40%;
-   padding: 1em;
+   padding: 0.1em;
    }
 
 .sidebar {
@@ -84,9 +87,13 @@ body {
   margin: 5% 5% 5% 5%;
   }
 
+footer, footer a{
+   /* DO NOT CHANGE THESE */
+   background-color: #444444;
+   color: #eeeeee;
+   width: 90%;
+   }
 
-footer {
-    /* DO NOT CHANGE THESE */
-    background-color: #444444;
-    color: #eeeeee;
-    }
+p {
+  text-align: right;
+  }
