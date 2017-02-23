@@ -3,37 +3,29 @@
 html,body,header,main,footer,section,aside,h1,h2,h3,h4,p{margin:0;padding:0;}
 ul{margin:0;}
 
-@media screen and (min-width: 35em) {
-  container {
-    display: flex;
-  }
-
 body {
   /* DO NOT CHANGE THESE */
   font-family: Verdana, Arial, sans-serif;
   }
 
-.container {
-  /*everything*/
-  /justify-content: center;
-  }
 
 .hero {
   /* DO NOT CHANGE THESE */
   background-color: #444444;
-
+  height: 10em;
 
   }
 
 .hero h1 {
    /* DO NOT CHANGE THESE */
    color: #ffffff;
-
-
+   align-self: center;
+   margin-left: 20%;
    }
 
 .hero nav {
   display: flex;
+  justify-content: flex-end;
   flex-grow: 1;
   }
 
@@ -53,7 +45,9 @@ body {
    flex-wrap: wrap;
    /* DO NOT CHANGE THESE */
    color: #444444
-
+   /*margin:*/
+   justify-content: space-around;
+   box-sizing: border-box;
    }
 
 .posts article {
@@ -61,17 +55,15 @@ body {
    background-color: #dddddd;
    border: 1px solid #444444;
    height: 20em; /* this is just so we can see the articles since they have no content */
-   margin: 5em;
-
-
+   margin: 1em;
+   flex: 0 0 40%;
+   padding: 0.1em;
    }
 
 .sidebar {
   background-color: #aaaaaa;
   color: #444444;
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 15%;
+
    /*margin:*/
   }
 
@@ -95,12 +87,37 @@ footer p {
   text-align: right;
   }
 
-  /* media query
-just change the border of the header... just to see that this works!
-   */
+  @media screen and (min-width: 35em) {
 
-@media screen and (min-width: 70em) {
-  container {
-    display: flex;
+      .posts {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      .posts article {
+          flex: 0 0 45%;
+      }
+
+      .sidebar {
+          display: flex;
+      }
+      .sidebar section {
+          /*width: auto;*/ /* apparently we don't need this! */
+          flex: 1;
+          margin: 1em;
+      }
+
   }
-}
+
+  @media screen and (min-width: 70em) {
+      .container {
+          display: flex;
+      }
+      .container .posts {
+          flex: 3;
+      }
+      .container .sidebar {
+          flex-direction: column;
+          flex: 1;
+      }
+  }
