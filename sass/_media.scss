@@ -1,0 +1,34 @@
+@media screen and (min-width: 35em) {
+
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .posts article {
+        flex: 0 0 45%;
+    }
+
+    .sidebar {
+        display: flex;
+    }
+    .sidebar section {
+        /*width: auto;*/ /* apparently we don't need this! */
+        flex: 1;
+        margin: 1em;
+    }
+
+}
+
+@media screen and (min-width: 70em) {
+    .container {
+        display: flex;
+    }
+    .container .posts {
+        flex: 3;
+    }
+    .container .sidebar {
+        flex-direction: column;
+        flex: 1;
+    }
+}

@@ -1,0 +1,33 @@
+.posts {
+   flex-wrap: wrap;
+   /* DO NOT CHANGE THESE */
+   color: $articleColor;
+   /*margin:*/
+   justify-content: space-around;
+   box-sizing: border-box;
+   }
+
+.posts article {
+   /* DO NOT CHANGE THESE */
+   background-color: $articleBackgroundColor;
+   border: $articleBorder;
+   height: $articleHeight; /* this is just so we can see the articles since they have no content */
+   margin: 1em;
+   flex: $articleFlex;
+   padding: $articlePadding;
+   }
+
+.sidebar {
+  background-color: $sidebarBackgroundColor;
+  color: $sidebarColor;
+
+   /*margin:*/
+  }
+section {
+  /* DO NOT CHANGE THESE */
+  background-color: $sidebarSectionBackgroundColor;
+  border: $sidebarSectionBorder;
+  height: 10em; /* this is just so we can see the articles since they have no content */
+  display: flex;
+  margin: 5% 5% 5% 5%;
+  }

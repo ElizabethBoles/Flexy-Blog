@@ -1,0 +1,26 @@
+.hero {
+  /* DO NOT CHANGE THESE */
+  background-color: $headerBackgroundColor;
+  height: $headerHeight;
+  h1 {
+    /* DO NOT CHANGE THESE */
+    color: $headerColor;
+    align-self: center;
+    margin-left: $marginH1;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: $headerNavFlex;
+    ul {
+      list-style: none;
+      display: flex;
+    }
+  }
+}
+
+.hero li a {
+  text-decoration: none;
+  color: $headerColor;
+  margin: $marginList;
+  }
